@@ -45,4 +45,4 @@ We may update this privacy policy from time to time. Any changes will be posted 
 
 ## Contact
 
-If you have questions about this privacy policy, please contact us at gabinwilliams@gmail.com.
+If you have questions about this privacy policy, please contact us at centergradeapp@proton.me.
