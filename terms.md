@@ -5,7 +5,7 @@ title: Terms of Service - CenterGrade App
 
 # Terms of Service
 
-**Last Updated: February 16, 2026**
+**Last Updated: February 20, 2026**
 
 ## Acceptance of Terms
 
@@ -18,6 +18,10 @@ CenterGrade App is a trading card centering measurement tool that uses your devi
 ## Grade Predictions Disclaimer
 
 Grade predictions provided by the app are estimates only and should not be considered guarantees of actual grades from any grading service. Actual grades from PSA, BGS, CGC, SGC, or any other grading company may differ from the app's predictions. We are not affiliated with, endorsed by, or associated with any grading company.
+
+## Advertising
+
+The free version of the app displays advertisements provided by Google AdMob. Ad content is determined by Google and is subject to [Google's Terms of Service](https://policies.google.com/terms). You may remove all ads by purchasing the Pro upgrade.
 
 ## In-App Purchases
 
@@ -41,4 +45,4 @@ We may update these terms from time to time. Continued use of the app after chan
 
 ## Contact
 
-If you have questions about these terms, please contact us at gabinwilliams@gmail.com.
+If you have questions about these terms, please contact us at centergradeapp@proton.me.
