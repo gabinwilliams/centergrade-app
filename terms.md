@@ -23,13 +23,12 @@ The app is available as a free download with optional Pro upgrade. Feature avail
 - Unlimited card scans
 - PSA and BGS grade predictions
 - Up to 10 scans saved in history
-- Share cards with CenterGrade watermark
+- Shareable result cards with CenterGrade branding
 - Rewarded video ads to temporarily unlock premium predictions
 
 **Pro tier ($4.99 one-time purchase) adds:**
 - CGC, SGC, ACE, and TAG grade predictions
 - Unlimited scan history
-- Watermark-free share cards
 - HD image capture (4224x2376)
 - Ad-free experience
 - Advanced adjustment tools (magnifier loupe, fine mode, guide color picker, extended zoom)
