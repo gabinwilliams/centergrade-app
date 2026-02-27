@@ -5,7 +5,7 @@ title: Terms of Service - CenterGrade App
 
 # Terms of Service
 
-**Last Updated: February 20, 2026**
+**Last Updated: February 27, 2026**
 
 ## Acceptance of Terms
 
@@ -13,7 +13,7 @@ By downloading or using CenterGrade App ("the app"), you agree to these terms of
 
 ## Description of Service
 
-CenterGrade App is a trading card centering measurement tool that uses your device's camera or photo library to analyze card centering and provide estimated grade predictions. All image processing is performed on your device. The app is provided for informational and entertainment purposes only.
+CenterGrade App is a trading card centering measurement tool that uses your device's camera or photo library to analyze card centering and provide estimated grade predictions. All image processing is performed on your device. The app uses Firebase Analytics by Google to collect anonymous usage data, including app interactions, device information, and crash reports, to help improve app performance and user experience. The app is provided for informational and entertainment purposes only.
 
 ## Free and Pro Tiers
 
