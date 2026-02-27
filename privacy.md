@@ -5,13 +5,13 @@ title: Privacy Policy - CenterGrade App
 
 # Privacy Policy
 
-**Last Updated: February 20, 2026**
+**Last Updated: February 27, 2026**
 
 ## Overview
 
 CenterGrade App ("we", "our", or "the app") is a trading card centering measurement tool for iOS. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.
 
-All card image processing happens entirely on your device. The app does include third-party advertising through Google AdMob, which may collect certain data as described below.
+All card image processing happens entirely on your device. The app includes third-party advertising through Google AdMob and anonymous usage analytics through Google Firebase Analytics, which may collect certain data as described below.
 
 ## Data We Access
 
@@ -47,6 +47,19 @@ You may opt out of personalized advertising by:
 - Going to **Settings > Privacy & Security > Apple Advertising** and turning off Personalized Ads
 - Upgrading to Pro to remove all ads entirely
 
+## Analytics
+
+CenterGrade uses **Google Firebase Analytics** to understand how the app is used and to improve the experience. Firebase Analytics collects the following data automatically:
+
+- **App Usage**: Session duration, screen views, app opens, and feature usage
+- **Device Information**: Device model, operating system version, language, and screen size
+- **App Instance ID**: An anonymous, randomly generated identifier unique to your app installation (not linked to your identity)
+- **Performance Data**: App launch times and general performance metrics
+
+This data is **anonymous and aggregated** — it is not linked to your identity and cannot be used to identify you personally. It is collected and processed by Google in accordance with [Google's Privacy Policy](https://policies.google.com/privacy).
+
+**Analytics data is collected for all users (free and Pro) to help us improve the app.** No personal information, card images, or scan results are included in analytics data.
+
 ## Data We Do NOT Collect
 
 CenterGrade itself does not collect:
@@ -60,6 +73,7 @@ CenterGrade itself does not collect:
 | Service | Purpose | Data Collected |
 |---------|---------|---------------|
 | **Google AdMob** | Advertising (free users only) | Device ID, coarse location, ad interaction data, crash data |
+| **Google Firebase Analytics** | Anonymous app usage analytics | App instance ID, session data, device info, screen views |
 | **Apple StoreKit** | In-app purchase processing | Managed by Apple per their privacy policy |
 | **Apple SKAdNetwork** | Privacy-preserving ad attribution | No personally identifiable data |
 
