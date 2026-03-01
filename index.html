@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CenterGrade App — Trading Card Centering Measurement</title>
+  <meta name="description" content="Measure your trading card's centering with precision. Instant grade predictions for PSA, BGS, CGC, SGC, ACE & TAG. Free iOS app.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CenterGrade App — Trading Card Centering Measurement">
+  <meta property="og:description" content="Measure your trading card's centering with precision. Instant grade predictions for PSA, BGS, CGC, SGC, ACE & TAG. Free iOS app.">
+  <meta property="og:image" content="https://centergradeapp.com/assets/og-image.png">
+  <meta property="og:url" content="https://centergradeapp.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CenterGrade App — Trading Card Centering Measurement">
+  <meta name="twitter:description" content="Measure your trading card's centering with precision. Instant grade predictions for PSA, BGS, CGC, SGC, ACE & TAG. Free iOS app.">
+  <meta name="twitter:image" content="https://centergradeapp.com/assets/og-image.png">
+
+  <!-- Apple Smart Banner -->
+  <meta name="apple-itunes-app" content="app-id=6759246214">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Noscript fallback -->
+  <noscript><style>.fade-in-up { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+  <!-- ====================================================================
+       Navigation
+       ==================================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="/" class="nav-logo" aria-label="CenterGrade App Home">
+        <img src="assets/app-icon.png" alt="CenterGrade App icon" class="nav-logo-img">
+        <span>CenterGrade App</span>
+      </a>
+
+      <div class="nav-menu" role="menubar">
+        <a href="#features" role="menuitem">Features</a>
+        <a href="#faq" role="menuitem">FAQ</a>
+        <a href="#download" role="menuitem">Download</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4" y1="18" x2="20" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       Hero
+       ==================================================================== -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Measure Your Card's Centering with Precision</h1>
+        <p>Instant centering analysis for PSA, BGS, CGC, SGC &amp; more. Snap a photo, get your grade prediction.</p>
+        <a href="https://apps.apple.com/app/centergrade-app/id6759246214" class="app-store-badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Download on the App Store">
+            <rect width="180" height="60" rx="10" fill="#000"/>
+            <rect x="0.5" y="0.5" width="179" height="59" rx="9.5" stroke="#A6A6A6" stroke-width="1" fill="none"/>
+            <!-- Apple logo -->
+            <g transform="translate(15, 12)">
+              <path d="M18.9 10.2c0-3.4 2.8-5.1 2.9-5.1-1.6-2.3-4-2.6-4.9-2.7-2.1-.2-4 1.2-5.1 1.2-1.1 0-2.7-1.2-4.5-1.2C5 2.5 2.8 4 1.5 6.3c-2.5 4.4-.6 10.9 1.8 14.5 1.2 1.7 2.6 3.7 4.5 3.6 1.8-.1 2.5-1.2 4.6-1.2 2.2 0 2.8 1.2 4.7 1.1 1.9 0 3.2-1.8 4.4-3.5 1.4-2 2-3.9 2-4-.1 0-3.8-1.5-3.8-5.8 0-3.6 2.9-5.3 3.1-5.4-1.7-2.5-4.4-2.8-5.3-2.9-.9-.1-1.8.1-2.6.5z" fill="#fff"/>
+              <path d="M15.5 1.7c1-1.2 1.6-2.8 1.4-4.5-1.4.1-3 .9-4 2.1-.9 1-1.7 2.7-1.5 4.3 1.5.1 3.1-.8 4.1-1.9z" fill="#fff" transform="translate(0, 2)"/>
+            </g>
+            <!-- Text -->
+            <text x="48" y="22" fill="#fff" font-family="-apple-system, 'Helvetica Neue', sans-serif" font-size="9" font-weight="400">Download on the</text>
+            <text x="48" y="42" fill="#fff" font-family="-apple-system, 'Helvetica Neue', sans-serif" font-size="20" font-weight="600">App Store</text>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-mockup">
+        <div class="phone-mockup">
+          <img src="assets/screenshot-1.png" alt="CenterGrade App centering results with grade predictions" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Features
+       ==================================================================== -->
+  <section id="features" class="features">
+    <!-- Feature 1: Automatic Card Detection -->
+    <div class="feature fade-in-up">
+      <div class="feature-mockup">
+        <div class="phone-mockup">
+          <img src="assets/screenshot-camera.png" alt="Card automatically detected and outlined" loading="lazy">
+        </div>
+      </div>
+      <div class="feature-content">
+        <h2>Automatic Card Detection</h2>
+        <p>Point your camera at any trading card and CenterGrade App instantly detects the outer and inner borders using advanced computer vision. No manual setup required.</p>
+      </div>
+    </div>
+
+    <!-- Feature 2: Professional Grading Standards -->
+    <div class="feature feature--reverse fade-in-up">
+      <div class="feature-mockup">
+        <div class="phone-mockup">
+          <img src="assets/screenshot-2.png" alt="Grade predictions for multiple companies" loading="lazy">
+        </div>
+      </div>
+      <div class="feature-content">
+        <h2>Professional Grading Standards</h2>
+        <p>Get centering grade predictions matched to the exact standards of six major grading companies. Know before you submit.</p>
+        <div class="company-badges">
+          <span class="company-badge"><img src="assets/logos/psa-logo.png" alt="PSA" height="24"></span>
+          <span class="company-badge"><img src="assets/logos/bgs-logo.png" alt="BGS" height="24"></span>
+          <span class="company-badge"><img src="assets/logos/cgc-logo.png" alt="CGC" height="24"></span>
+          <span class="company-badge"><img src="assets/logos/sgc-logo.png" alt="SGC" height="24"></span>
+          <span class="company-badge"><img src="assets/logos/ace-logo.png" alt="ACE" height="24"></span>
+          <span class="company-badge"><img src="assets/logos/tag-logo.png" alt="TAG" height="24"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Manual Adjustment -->
+    <div class="feature fade-in-up">
+      <div class="feature-mockup">
+        <div class="phone-mockup">
+          <img src="assets/screenshot-3.png" alt="Manual edge adjustment with precision controls" loading="lazy">
+        </div>
+      </div>
+      <div class="feature-content">
+        <h2>Fine-Tune with Manual Adjustment</h2>
+        <p>Perfect your measurements with pinch-to-zoom and precision mode for sub-pixel accuracy. Drag edges to fine-tune detection on any card.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Why Choose CenterGrade App
+       ==================================================================== -->
+  <section class="why-choose fade-in-up">
+    <div class="container">
+      <h2>Why Choose CenterGrade App?</h2>
+      <div class="card-grid">
+        <!-- Card 1: Instant Results -->
+        <div class="card">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="24" cy="24" r="20" stroke="#00D4AA" stroke-width="2" fill="none"/>
+            <polyline points="24,12 24,24 32,28" stroke="#00D4AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <h3>Instant Results</h3>
+          <p>Snap and analyze in seconds. No waiting, no uploading to a website.</p>
+        </div>
+
+        <!-- Card 2: Six Grading Standards -->
+        <div class="card">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 6L30 18H42L32 26L36 38L24 30L12 38L16 26L6 18H18L24 6Z" stroke="#00D4AA" stroke-width="2" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <h3>Six Grading Standards</h3>
+          <p>PSA, BGS, CGC, SGC, ACE, and TAG predictions in one scan.</p>
+        </div>
+
+        <!-- Card 3: Free to Use -->
+        <div class="card">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="24" cy="24" r="20" stroke="#00D4AA" stroke-width="2" fill="none"/>
+            <polyline points="16,24 22,30 34,18" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <h3>Free to Use</h3>
+          <p>Unlimited scans with no account required. Premium features available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials section removed — will add back when real reviews are available -->
+
+  <!-- ====================================================================
+       FAQ
+       ==================================================================== -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How accurate is CenterGrade App?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>CenterGrade App uses advanced computer vision to measure centering within fractions of a millimeter. Our predictions align with real grading results from PSA, BGS, CGC, SGC, ACE, and TAG.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is CenterGrade App free?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Unlimited scans with PSA and BGS predictions are completely free. Premium unlocks CGC, SGC, ACE &amp; TAG predictions and unlimited history.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What types of cards does it work with?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Any raw trading card with a visible border &mdash; sports cards, Pok&eacute;mon, Magic: The Gathering, Yu-Gi-Oh!, and more.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does manual adjustment work?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>After automatic detection, you can fine-tune card borders with pinch-to-zoom and precision mode for sub-pixel accuracy.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data private?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. All analysis happens on-device. We never upload your card images to any server. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What iPhone do I need?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="5,8 10,13 15,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>CenterGrade App requires iOS 17 or later. Works on iPhone XS and newer models.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Stats
+       ==================================================================== -->
+  <section class="stats fade-in-up">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Grading Standards</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">4.8&#9733;</div>
+          <div class="stat-label">App Store Rating</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">Free</div>
+          <div class="stat-label">To Get Started</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CTA
+       ==================================================================== -->
+  <section id="download" class="cta">
+    <div class="cta-content">
+      <h2>Start Grading Your Cards Today</h2>
+      <p>Download CenterGrade App and get instant centering predictions.</p>
+      <a href="https://apps.apple.com/app/centergrade-app/id6759246214" class="app-store-badge" aria-label="Download on the App Store">
+        <svg viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Download on the App Store">
+          <rect width="180" height="60" rx="10" fill="#000"/>
+          <rect x="0.5" y="0.5" width="179" height="59" rx="9.5" stroke="#A6A6A6" stroke-width="1" fill="none"/>
+          <g transform="translate(15, 12)">
+            <path d="M18.9 10.2c0-3.4 2.8-5.1 2.9-5.1-1.6-2.3-4-2.6-4.9-2.7-2.1-.2-4 1.2-5.1 1.2-1.1 0-2.7-1.2-4.5-1.2C5 2.5 2.8 4 1.5 6.3c-2.5 4.4-.6 10.9 1.8 14.5 1.2 1.7 2.6 3.7 4.5 3.6 1.8-.1 2.5-1.2 4.6-1.2 2.2 0 2.8 1.2 4.7 1.1 1.9 0 3.2-1.8 4.4-3.5 1.4-2 2-3.9 2-4-.1 0-3.8-1.5-3.8-5.8 0-3.6 2.9-5.3 3.1-5.4-1.7-2.5-4.4-2.8-5.3-2.9-.9-.1-1.8.1-2.6.5z" fill="#fff"/>
+            <path d="M15.5 1.7c1-1.2 1.6-2.8 1.4-4.5-1.4.1-3 .9-4 2.1-.9 1-1.7 2.7-1.5 4.3 1.5.1 3.1-.8 4.1-1.9z" fill="#fff" transform="translate(0, 2)"/>
+          </g>
+          <text x="48" y="22" fill="#fff" font-family="-apple-system, 'Helvetica Neue', sans-serif" font-size="9" font-weight="400">Download on the</text>
+          <text x="48" y="42" fill="#fff" font-family="-apple-system, 'Helvetica Neue', sans-serif" font-size="20" font-weight="600">App Store</text>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="CenterGrade App Home">
+            <img src="assets/app-icon.png" alt="CenterGrade App icon" class="nav-logo-img">
+            <span>CenterGrade App</span>
+          </a>
+          <p>Precision centering measurement for trading cards.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><a href="mailto:centergradeapp@proton.me">centergradeapp@proton.me</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 CenterGrade App. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
