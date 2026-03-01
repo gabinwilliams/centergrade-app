@@ -336,25 +336,24 @@ a:hover {
 .company-badges {
   display: flex;
   flex-wrap: nowrap;
-  gap: 8px;
-  margin-top: 24px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
   justify-content: center;
 }
 
 .company-badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  padding: 0;
+  background: none !important;
 }
 
 .company-logo {
-  height: 10px;
+  height: 16px;
   width: auto;
   object-fit: contain;
+  opacity: 0.85;
 }
 
 /* --------------------------------------------------------------------------
