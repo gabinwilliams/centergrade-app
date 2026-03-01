@@ -347,11 +347,15 @@ a:hover {
   align-items: center;
   padding: 0;
   background: none !important;
+  max-height: 16px;
 }
 
-.company-logo {
+.company-badge img {
+  display: block;
   height: 16px;
+  max-height: 16px;
   width: auto;
+  max-width: 60px;
   object-fit: contain;
   opacity: 0.85;
 }
