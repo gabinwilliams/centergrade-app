@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Privacy Policy — CenterGrade" description="CenterGrade Privacy Policy. Learn how we protect your data — all card image processing happens on-device. No account required, no images uploaded.">
+  <Nav />
+  <main class="mx-auto max-w-3xl px-6 py-16 md:py-24">
+
+    <h1 class="text-3xl font-bold mb-8">Privacy Policy</h1>
+    <p class="mb-8 text-sm" style="color: #8B8FA3;">Last Updated: February 27, 2026</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Overview</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">CenterGrade App ("we", "our", or "the app") is a trading card centering measurement tool for iOS. We are committed to protecting your privacy. This policy explains what data the app accesses and how it is handled.</p>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">All card image processing happens entirely on your device. The app includes third-party advertising through Google AdMob and anonymous usage analytics through Google Firebase Analytics, which may collect certain data as described below.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Data We Access</h2>
+
+    <h3 class="text-lg font-semibold mt-6 mb-3">Camera and Photos</h3>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">The app accesses your device camera and photo library solely to capture or select images of trading cards for centering analysis. Images are processed entirely on your device and are never uploaded to any server.</p>
+
+    <h3 class="text-lg font-semibold mt-6 mb-3">Scan History</h3>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">Card scan results (centering measurements and grade predictions) are stored locally on your device using Apple's SwiftData framework. This data never leaves your device.</p>
+
+    <h3 class="text-lg font-semibold mt-6 mb-3">Purchase Information</h3>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">The app uses Apple's StoreKit framework to process in-app purchases. All purchase transactions are handled entirely by Apple. We do not collect, store, or have access to your payment information.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Advertising</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">CenterGrade displays advertisements to free users through <strong class="text-text-primary">Google AdMob</strong>. The Google AdMob SDK may collect the following data:</p>
+    <ul class="list-disc pl-6 mb-4" style="color: #8B8FA3;">
+      <li class="mb-2"><strong class="text-text-primary">Device Identifiers</strong>: Advertising identifier (IDFA) if you grant tracking permission</li>
+      <li class="mb-2"><strong class="text-text-primary">Coarse Location</strong>: Approximate location inferred from your IP address</li>
+      <li class="mb-2"><strong class="text-text-primary">Usage Data</strong>: Ad interaction data such as impressions, taps, and views</li>
+      <li class="mb-2"><strong class="text-text-primary">Crash Data</strong>: SDK stability and diagnostic information</li>
+    </ul>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">This data is collected and processed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: #00D4AA;" class="hover:underline">Google's Privacy Policy</a>.</p>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;"><strong class="text-text-primary">Premium (Pro) users do not see ads, and no advertising data is collected for those users.</strong></p>
+
+    <h3 class="text-lg font-semibold mt-6 mb-3">Ad Tracking and Your Choices</h3>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">The app will request your permission via Apple's App Tracking Transparency (ATT) prompt before allowing ad-related tracking. You can change this at any time in your device's <strong class="text-text-primary">Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</p>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">You may opt out of personalized advertising by:</p>
+    <ul class="list-disc pl-6 mb-4" style="color: #8B8FA3;">
+      <li class="mb-2">Declining the App Tracking Transparency prompt</li>
+      <li class="mb-2">Going to <strong class="text-text-primary">Settings &gt; Privacy &amp; Security &gt; Tracking</strong> and disabling tracking for CenterGrade</li>
+      <li class="mb-2">Going to <strong class="text-text-primary">Settings &gt; Privacy &amp; Security &gt; Apple Advertising</strong> and turning off Personalized Ads</li>
+      <li class="mb-2">Upgrading to Pro to remove all ads entirely</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Analytics</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">CenterGrade uses <strong class="text-text-primary">Google Firebase Analytics</strong> to understand how the app is used and to improve the experience. Firebase Analytics collects the following data automatically:</p>
+    <ul class="list-disc pl-6 mb-4" style="color: #8B8FA3;">
+      <li class="mb-2"><strong class="text-text-primary">App Usage</strong>: Session duration, screen views, app opens, and feature usage</li>
+      <li class="mb-2"><strong class="text-text-primary">Device Information</strong>: Device model, operating system version, language, and screen size</li>
+      <li class="mb-2"><strong class="text-text-primary">App Instance ID</strong>: An anonymous, randomly generated identifier unique to your app installation (not linked to your identity)</li>
+      <li class="mb-2"><strong class="text-text-primary">Performance Data</strong>: App launch times and general performance metrics</li>
+    </ul>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">This data is <strong class="text-text-primary">anonymous and aggregated</strong> &mdash; it is not linked to your identity and cannot be used to identify you personally. It is collected and processed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: #00D4AA;" class="hover:underline">Google's Privacy Policy</a>.</p>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;"><strong class="text-text-primary">Analytics data is collected for all users (free and Pro) to help us improve the app.</strong> No personal information, card images, or scan results are included in analytics data.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Data We Do NOT Collect</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">CenterGrade itself does not collect:</p>
+    <ul class="list-disc pl-6 mb-4" style="color: #8B8FA3;">
+      <li class="mb-2">No personal information (name, email, phone number)</li>
+      <li class="mb-2">No account creation required</li>
+      <li class="mb-2">No card images or scan results leave your device</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Third-Party Services</h2>
+    <div class="overflow-x-auto mb-4">
+      <table class="w-full text-sm" style="color: #8B8FA3;">
+        <thead>
+          <tr class="border-b border-white/10">
+            <th class="text-left py-3 pr-4 font-semibold text-text-primary">Service</th>
+            <th class="text-left py-3 pr-4 font-semibold text-text-primary">Purpose</th>
+            <th class="text-left py-3 font-semibold text-text-primary">Data Collected</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-white/5">
+            <td class="py-3 pr-4"><strong class="text-text-primary">Google AdMob</strong></td>
+            <td class="py-3 pr-4">Advertising (free users only)</td>
+            <td class="py-3">Device ID, coarse location, ad interaction data, crash data</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-3 pr-4"><strong class="text-text-primary">Google Firebase Analytics</strong></td>
+            <td class="py-3 pr-4">Anonymous app usage analytics</td>
+            <td class="py-3">App instance ID, session data, device info, screen views</td>
+          </tr>
+          <tr class="border-b border-white/5">
+            <td class="py-3 pr-4"><strong class="text-text-primary">Apple StoreKit</strong></td>
+            <td class="py-3 pr-4">In-app purchase processing</td>
+            <td class="py-3">Managed by Apple per their privacy policy</td>
+          </tr>
+          <tr>
+            <td class="py-3 pr-4"><strong class="text-text-primary">Apple SKAdNetwork</strong></td>
+            <td class="py-3 pr-4">Privacy-preserving ad attribution</td>
+            <td class="py-3">No personally identifiable data</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">For more information on how Google uses data, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" style="color: #00D4AA;" class="hover:underline">How Google Uses Information from Sites or Apps that Use Our Services</a>.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Data Storage</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">All scan data is stored locally on your device. We do not operate any servers or cloud services. Deleting the app removes all associated scan data.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Children's Privacy</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">CenterGrade does not knowingly collect personal information from children under the age of 13. The Google AdMob SDK is configured to comply with applicable regulations.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Data Sharing</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">We do not collect or share your scan data. The Google AdMob SDK may share advertising-related data with Google and its advertising partners as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: #00D4AA;" class="hover:underline">Google's Privacy Policy</a>. Premium (Pro) users are exempt from all advertising and associated data collection.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Your Rights</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">You maintain full control over your data:</p>
+    <ul class="list-disc pl-6 mb-4" style="color: #8B8FA3;">
+      <li class="mb-2">View, delete individual scans, or clear all scan history within the app</li>
+      <li class="mb-2">Opt out of ad tracking at any time via device privacy settings</li>
+      <li class="mb-2">Upgrade to Pro to eliminate all advertising and associated data collection</li>
+      <li class="mb-2">Uninstall the app to remove all locally stored data</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Changes to This Policy</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4">Contact</h2>
+    <p class="mb-4 leading-relaxed" style="color: #8B8FA3;">If you have questions about this privacy policy, please contact us at <a href="mailto:centergradeapp@proton.me" style="color: #00D4AA;" class="hover:underline">centergradeapp@proton.me</a>.</p>
+
+  </main>
+  <Footer />
+</BaseLayout>
