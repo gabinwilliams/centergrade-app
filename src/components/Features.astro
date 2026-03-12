@@ -1,0 +1,77 @@
+---
+import ParallaxMockup from './react/ParallaxMockup.tsx';
+import TextHighlight from './react/TextHighlight.tsx';
+
+const features = [
+  {
+    headingBefore: "Point. Detect. ",
+    highlight: "Done.",
+    description: "Aim your camera at any trading card. CenterGrade's Vision-powered detection locks onto outer and inner borders instantly — no cropping, no manual setup, no wasted time.",
+    src: "/assets/screenshot-camera.png",
+    srcMobile: "/assets/screenshot-camera-web.jpg",
+    alt: "Card automatically detected by camera",
+    reverse: false,
+    showBadges: false,
+  },
+  {
+    headingBefore: "Six Companies. ",
+    highlight: "One Scan.",
+    description: "PSA, BGS, CGC, SGC, ACE, TAG — each uses different centering thresholds. One scan gives you predictions against all six, so you know exactly where to submit.",
+    src: "/assets/screenshot-2.png",
+    srcMobile: "/assets/screenshot-2-web.jpg",
+    alt: "Grade predictions across six grading companies",
+    reverse: true,
+    showBadges: true,
+  },
+  {
+    headingBefore: "Sub-Pixel ",
+    highlight: "Precision",
+    description: "Pinch to zoom. Drag edges to nudge detection boundaries. Precision mode gives you sub-pixel accuracy for cards where a tenth of a millimeter matters.",
+    src: "/assets/screenshot-3.png",
+    srcMobile: "/assets/screenshot-3-web.jpg",
+    alt: "Manual edge adjustment with precision controls",
+    reverse: false,
+    showBadges: false,
+  },
+];
+
+const companies = ["psa", "bgs", "cgc", "sgc", "ace", "tag"];
+---
+
+<section id="features" class="py-16 md:py-24">
+  {features.map((feature) => (
+    <div class:list={[
+      "mx-auto max-w-7xl px-6 flex flex-col items-center gap-12 md:gap-20 py-16 md:py-24",
+      feature.reverse ? "md:flex-row-reverse" : "md:flex-row"
+    ]}>
+      <div class="flex-1 flex justify-center">
+        <ParallaxMockup
+          client:visible
+          src={feature.src}
+          srcMobile={feature.srcMobile}
+          alt={feature.alt}
+        />
+      </div>
+
+      <div class="flex-1 max-w-lg">
+        <h2 class="text-2xl md:text-[32px] font-bold tracking-[-0.02em] mb-4 leading-tight">
+          {feature.headingBefore}
+          <TextHighlight client:visible>{feature.highlight}</TextHighlight>
+        </h2>
+        <p class="text-lg leading-relaxed" style="color: #8B8FA3;">
+          {feature.description}
+        </p>
+
+        {feature.showBadges && (
+          <div class="flex flex-wrap gap-3 mt-6">
+            {companies.map((company) => (
+              <span class="px-3 py-1.5 rounded-lg border border-white/5 backdrop-blur-sm" style="background: #141928;">
+                <img src={`/assets/logos/${company}-logo.png`} alt={company.toUpperCase()} class="h-5" />
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  ))}
+</section>
