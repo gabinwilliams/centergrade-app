@@ -1,0 +1,18 @@
+---
+import NumberCounter from './react/NumberCounter.tsx';
+import TextHighlight from './react/TextHighlight.tsx';
+---
+
+<section class="py-16 md:py-24 border-y border-white/5">
+  <div class="mx-auto max-w-5xl px-6">
+    <h2 class="text-2xl md:text-[32px] font-bold tracking-[-0.02em] text-center mb-16">
+      Why <TextHighlight client:visible>CenterGrade App</TextHighlight>?
+    </h2>
+
+    <div class="grid grid-cols-3 gap-8 md:gap-16">
+      <NumberCounter client:visible value={6} label="Grading Standards" />
+      <NumberCounter client:visible value={2} prefix="< " suffix="s" label="Analysis Time" />
+      <NumberCounter client:visible value={0} label="Accounts Required" />
+    </div>
+  </div>
+</section>
