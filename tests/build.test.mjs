@@ -32,3 +32,10 @@ test("calculator starts with disabled inputs for a truthful no-JavaScript fallba
   assert.ok(/id="vertical-ratio"[^>]*>Top \/ bottom: 50 \/ 50<\/output>/.test(html), "Vertical worked example missing");
   assert.ok(html.includes("[data-margin-calculator]"), "Calculator initialization is not bundled into the page");
 });
+
+test("measurement limitations are available in native disclosures without JavaScript", async () => {
+  const html = await source("/");
+  const answers = [...html.matchAll(/<details\b[^>]*>([\s\S]*?)<\/details>/g)].map(value => value[1]);
+  assert.ok(answers.some(answer => answer.includes("overall grade") && answer.includes("grade guarantee")), "Overall-grade limitation must be available without hydration");
+  assert.ok(answers.some(answer => answer.includes("repeatability") && answer.includes("Inspect the pins")), "Accuracy limitation must be available without hydration");
+});

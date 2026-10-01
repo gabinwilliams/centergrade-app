@@ -1,5 +1,4 @@
 ---
-import FaqAccordion from './react/FaqAccordion.tsx';
 import TextHighlight from './react/TextHighlight.tsx';
 
 const faqItems = [
@@ -18,6 +17,15 @@ const faqItems = [
       <TextHighlight client:visible>Before you scan</TextHighlight>
     </h2>
 
-    <FaqAccordion client:visible items={faqItems} />
+    <div class="divide-y divide-white/10">
+      {faqItems.map(({ question, answer }) => (
+        <details class="group py-5">
+          <summary class="cursor-pointer text-lg font-medium focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-teal">
+            {question}
+          </summary>
+          <p class="mt-4 text-text-secondary leading-relaxed">{answer}</p>
+        </details>
+      ))}
+    </div>
   </div>
 </section>
