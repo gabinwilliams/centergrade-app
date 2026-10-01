@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import BoundaryIllustration from '../../components/BoundaryIllustration.astro';
+import MarginCalculator from '../../components/MarginCalculator.astro';
+---
+
+<BaseLayout title="How to measure 60/40 card centering — CenterGrade" description="Understand 60/40 centering with a worked border-width example. Learn which edges to select, how to photograph both sides, and when a ratio remains uncertain.">
+  <Nav />
+  <main class="mx-auto max-w-4xl px-6 py-14 md:py-20">
+    <article class="guide space-y-10">
+      <header>
+        <p class="text-brand-teal text-sm font-semibold mb-4">CENTERING GUIDE</p>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">What does 60/40 card centering mean?</h1>
+        <p class="text-xl text-text-secondary leading-relaxed">It describes how the space is divided between two opposing borders. It does not mean that 60% of the whole card is artwork, and it does not establish an overall grade.</p>
+      </header>
+      <section>
+        <h2>Start with a worked example</h2>
+        <p>If the left border is 3 mm wide and the right is 2 mm, their combined width is 5 mm. The left is 3 ÷ 5 = 60% of that total; the right is 2 ÷ 5 = 40%. That is <strong>60/40 left/right</strong>.</p>
+        <p>Top/bottom is a separate calculation. Equal 2 mm top and bottom borders give 50/50 vertically. Keep the direction attached to each result: a 40/60 left/right ratio has the wider border on the right.</p>
+        <div class="my-8"><BoundaryIllustration /></div>
+        <p class="font-mono text-sm bg-surface rounded-lg p-4">Left % = 100 × left ÷ (left + right)<br />Top % = 100 × top ÷ (top + bottom)</p>
+      </section>
+      <section>
+        <h2>Choose the physical and printed boundaries</h2>
+        <p>The outer boundary follows the physical card edge. A sleeve or toploader edge is a different object. The inner boundary should follow the intended printed edge for that layout, rather than a convenient rectangle inside the artwork.</p>
+        <p>On a conventional bordered card, the transition from the border to the printed interior can be a useful reference. Rounded corners and interruptions can make individual points hard to place; look at the straight side segments as well.</p>
+        <p>A full-art, borderless or intentionally asymmetric design may not have a meaningful rectangular inner boundary. Leave that case unresolved. A symmetric starting guide can produce 50/50 even when the real print is off-center, so inspect where the pins actually land.</p>
+      </section>
+      <section>
+        <h2>Make the edges visible before measuring</h2>
+        <ol>
+          <li>Use diffuse light and a plain surface that contrasts with the card. Avoid reflections covering an edge.</li>
+          <li>Keep the card flat and photograph it front-facing. Raw border widths from a tilted photo can be misleading.</li>
+          <li>Keep the whole physical outline in view and make sure the image has enough detail to identify the printed edge.</li>
+          <li>Review the photo and both boundaries. Retake it when blur or glare hides the edge; zoom cannot restore missing pixels.</li>
+        </ol>
+        <p>For foil or holographic cards, change the light or camera position to move reflections away from the borders. If a protective sleeve is needed, make sure you can distinguish its outline from the card itself.</p>
+      </section>
+      <MarginCalculator />
+      <section>
+        <h2>Check the back and preserve the context</h2>
+        <p>A front result does not establish the back's centering. Photograph and review both sides, and keep separate left/right and top/bottom ratios for each. When the back is missing, say “back not checked.”</p>
+        <p>When sharing a centering check, include the photo and selected boundaries, identify the side, and say whether you adjusted the pins. This helps another collector inspect the basis of the result. It is a record of your check, not grading certification.</p>
+      </section>
+      <section>
+        <h2>Use centering as a pre-screening step</h2>
+        <p>Grading also considers surface, corners, edges and other condition factors. A card within a company's centering limit can still receive a lower overall grade. Consult that company's current published standards for the card category before making a submission decision.</p>
+        <p>If small pin changes move a result across a limit, treat it as borderline and inspect it again. Decimal places show arithmetic precision; they do not establish the accuracy of the photo or the boundary selection.</p>
+      </section>
+    </article>
+  </main>
+  <Footer campaign="guide-60-40" />
+</BaseLayout>
+
+<style>
+  .guide h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; }
+  .guide p, .guide li { line-height: 1.8; }
+  .guide section > p, .guide li { color: var(--color-text-secondary); margin-bottom: 1rem; }
+  .guide ol { list-style: decimal; padding-left: 1.5rem; }
+  .guide strong { color: var(--color-text-primary); }
+</style>

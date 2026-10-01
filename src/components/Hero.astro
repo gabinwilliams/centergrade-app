@@ -1,6 +1,9 @@
 ---
 import HeroBackground from './HeroBackground.astro';
 import TextHighlight from './react/TextHighlight.tsx';
+import BoundaryIllustration from './BoundaryIllustration.astro';
+import { appStoreLink } from '../lib/appStoreLink';
+const downloadURL = appStoreLink('website-home', import.meta.env.PUBLIC_APP_STORE_PROVIDER_TOKEN);
 ---
 
 <section id="hero" class="relative py-20 md:py-28 overflow-hidden">
@@ -9,15 +12,15 @@ import TextHighlight from './react/TextHighlight.tsx';
   <div class="relative z-10 mx-auto max-w-7xl px-6 flex flex-col items-center gap-12 md:gap-16">
     <div class="text-center max-w-2xl">
       <h1 class="text-[32px] md:text-[48px] font-bold leading-tight tracking-[-0.02em] mb-5">
-        Know Your Card's Grade{" "}
-        <TextHighlight client:visible>Before You Submit</TextHighlight>
+        Check Your Card's Centering{" "}
+        <TextHighlight client:visible>Before You Submit or Buy</TextHighlight>
       </h1>
       <p class="text-lg leading-relaxed mb-8" style="color: #8B8FA3;">
-        Stop wasting $30+ on submissions that come back off-center.
-        CenterGrade App measures your card against PSA, BGS, CGC, SGC, ACE &amp; TAG standards in seconds.
+        Review the physical and printed boundaries, compare both sides, and keep a centering record.
+        Centering is one part of card condition; a photo-based ratio cannot establish an overall grade.
       </p>
 
-      <a href="https://apps.apple.com/app/centergrade-app/id6759246214" class="inline-block transition-transform hover:scale-105" aria-label="Download on the App Store">
+      <a href={downloadURL} class="inline-block transition-transform hover:scale-105" aria-label="Download on the App Store">
         <svg viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Download on the App Store" class="h-12 w-auto">
           <rect width="180" height="60" rx="10" fill="#000"/>
           <rect x="0.5" y="0.5" width="179" height="59" rx="9.5" stroke="#A6A6A6" stroke-width="1" fill="none"/>
@@ -31,13 +34,7 @@ import TextHighlight from './react/TextHighlight.tsx';
       </a>
     </div>
 
-    <div class="relative">
-      <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/5" style="box-shadow: 0 25px 50px -12px rgba(0, 212, 170, 0.1);">
-        <picture>
-          <source media="(max-width: 767px)" srcset="/assets/screenshot-1-web.jpg" />
-          <img src="/assets/screenshot-1.png" alt="CenterGrade App centering results with grade predictions" class="w-full max-w-sm" loading="eager" />
-        </picture>
-      </div>
-    </div>
+    <a href="/guides/60-40-centering/" class="text-brand-teal underline underline-offset-4">Learn what 60/40 means</a>
+    <BoundaryIllustration />
   </div>
 </section>
