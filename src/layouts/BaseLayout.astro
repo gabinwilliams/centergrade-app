@@ -6,7 +6,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "Measure your trading card's centering with precision. Instant grade predictions for PSA, BGS, CGC, SGC, ACE & TAG. Free iOS app." } = Astro.props;
+const { title, description = "Check trading card centering before submitting or buying. Review physical and printed boundaries, compare front and back, and keep a record with CenterGrade for iOS." } = Astro.props;
+const pageURL = new URL(Astro.url.pathname, Astro.site ?? "https://centergradeapp.com").toString();
 ---
 
 <!DOCTYPE html>
@@ -16,17 +17,18 @@ const { title, description = "Measure your trading card's centering with precisi
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={pageURL} />
 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content="https://centergradeapp.com/assets/og-image.png" />
-  <meta property="og:url" content="https://centergradeapp.com" />
+  <meta property="og:image" content="https://centergradeapp.com/assets/app-icon.png" />
+  <meta property="og:url" content={pageURL} />
   <meta property="og:type" content="website" />
 
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content="https://centergradeapp.com/assets/og-image.png" />
+  <meta name="twitter:image" content="https://centergradeapp.com/assets/app-icon.png" />
 
   <meta name="apple-itunes-app" content="app-id=6759246214" />
 

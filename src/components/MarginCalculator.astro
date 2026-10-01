@@ -1,0 +1,35 @@
+<section class="rounded-2xl bg-surface border border-white/10 p-6 md:p-8" aria-labelledby="calculator-title" data-margin-calculator>
+  <h2 id="calculator-title" class="text-2xl font-semibold mb-3">Try the border-width arithmetic</h2>
+  <p class="text-text-secondary mb-6">Use the same unit for each opposing pair. The starting values are an example; this calculator does not measure a photo.</p>
+  <div class="grid grid-cols-2 gap-5 max-w-xl">
+    <label class="grid gap-2" for="margin-left">Left border<input id="margin-left" type="number" min="0" step="any" value="3" disabled class="rounded-lg border border-white/20 bg-bg-primary p-3 w-full" /></label>
+    <label class="grid gap-2" for="margin-right">Right border<input id="margin-right" type="number" min="0" step="any" value="2" disabled class="rounded-lg border border-white/20 bg-bg-primary p-3 w-full" /></label>
+    <label class="grid gap-2" for="margin-top">Top border<input id="margin-top" type="number" min="0" step="any" value="2" disabled class="rounded-lg border border-white/20 bg-bg-primary p-3 w-full" /></label>
+    <label class="grid gap-2" for="margin-bottom">Bottom border<input id="margin-bottom" type="number" min="0" step="any" value="2" disabled class="rounded-lg border border-white/20 bg-bg-primary p-3 w-full" /></label>
+  </div>
+  <div class="grid gap-2 my-6 font-mono text-brand-teal">
+    <output id="horizontal-ratio" for="margin-left margin-right" aria-live="polite">Left / right: 60 / 40</output>
+    <output id="vertical-ratio" for="margin-top margin-bottom" aria-live="polite">Top / bottom: 50 / 50</output>
+  </div>
+  <p class="text-sm text-text-secondary">These are arithmetic ratios, not a grade or a verified measurement. An unclear boundary remains unresolved even if the numbers add up.</p>
+  <noscript><p class="mt-4 text-sm text-text-secondary">Enable JavaScript to edit this example. The worked example above remains available.</p></noscript>
+</section>
+
+<script>
+  import { marginRatio } from '../lib/centering';
+  const container = document.querySelector('[data-margin-calculator]');
+  const input = (side: string) => document.getElementById(`margin-${side}`) as HTMLInputElement;
+  const update = () => {
+    for (const [first, second, output, label] of [['left', 'right', 'horizontal-ratio', 'Left / right'], ['top', 'bottom', 'vertical-ratio', 'Top / bottom']]) {
+      const ratio = marginRatio(input(first).valueAsNumber, input(second).valueAsNumber);
+      document.getElementById(output)!.textContent = ratio
+        ? `${label}: ${ratio.map(value => value.toFixed(1).replace(/\.0$/, '')).join(' / ')}`
+        : `${label}: enter nonnegative widths with a positive total.`;
+    }
+  };
+  container?.querySelectorAll<HTMLInputElement>('input').forEach(field => {
+    field.addEventListener('input', update);
+    field.disabled = false;
+  });
+  if (container) update();
+</script>
