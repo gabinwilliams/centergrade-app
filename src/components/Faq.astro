@@ -3,37 +3,19 @@ import FaqAccordion from './react/FaqAccordion.tsx';
 import TextHighlight from './react/TextHighlight.tsx';
 
 const faqItems = [
-  {
-    question: "How accurate is CenterGrade App?",
-    answer: "CenterGrade App uses Apple's Vision framework to detect card borders down to sub-pixel accuracy. The centering ratios you see match what grading companies measure — but remember, physical grading also accounts for factors like print registration that a photo can't capture."
-  },
-  {
-    question: "Is it really free?",
-    answer: "Unlimited scans, no account, no paywall for core features. Premium unlocks scan history, customisation, an ad-free experience, and detailed analytics — but measuring your card's centering is always free."
-  },
-  {
-    question: "What types of cards work?",
-    answer: "Any standard rectangular trading card — Pokémon, sports cards, Magic: The Gathering, Yu-Gi-Oh, you name it. If it has a visible border, CenterGrade App can measure it."
-  },
-  {
-    question: "What if the auto-detection isn't perfect?",
-    answer: "Tap any edge and drag it into position. Pinch to zoom for sub-pixel adjustments. The measurement updates live as you fine-tune — no need to rescan."
-  },
-  {
-    question: "Does CenterGrade App store my card photos?",
-    answer: "No. All processing happens on-device. Your photos never leave your phone. No cloud uploads, no servers, no data collection."
-  },
-  {
-    question: "What iPhone do I need?",
-    answer: "Any iPhone running iOS 17 or later. CenterGrade App is optimized for the camera and processing power in iPhone 12 and newer, but works on older supported devices too."
-  },
+  { question: "Does the app predict my card's overall grade?", answer: "A centering ratio describes the balance between the selected borders. Grading also considers corners, edges, surface and other condition factors. Use centering as a pre-submission check, not a grade guarantee." },
+  { question: "How accurate are the measurements?", answer: "Accuracy depends on the photo and the boundaries you select. Real-card error and repeatability have not been established by a published benchmark. Inspect the pins, use a clear image, and avoid treating extra decimal places as proof of accuracy." },
+  { question: "Is the app free?", answer: "CenterGrade is free to download, with an optional one-time Pro purchase. Check the in-app offer for the current features included." },
+  { question: "Can I measure every card layout?", answer: "Conventional cards with clear physical and printed boundaries are easier to inspect. Full-art, borderless and intentionally asymmetric layouts may not have a meaningful rectangular inner boundary. Do not invent a border to force a ratio." },
+  { question: "Where are my card photos processed?", answer: "Card image analysis runs on your device, and saved scans are stored locally. You choose where to send a shared result. Other services, including analytics, ads and market pricing, can contact servers; see the Privacy Policy for details." },
+  { question: "What iPhone do I need?", answer: "The app supports iOS 17 or later. Camera detail and photo conditions affect how clearly you can identify the boundaries." },
 ];
 ---
 
 <section id="faq" class="py-16 md:py-24">
   <div class="mx-auto max-w-3xl px-6">
     <h2 class="text-2xl md:text-[32px] font-bold tracking-[-0.02em] text-center mb-12">
-      <TextHighlight client:visible>Questions?</TextHighlight> Answers.
+      <TextHighlight client:visible>Before you scan</TextHighlight>
     </h2>
 
     <FaqAccordion client:visible items={faqItems} />
